@@ -1,0 +1,5 @@
+config terminal
+interface vlan 1
+description Python_G1
+end
+wr mem
