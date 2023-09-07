@@ -83,7 +83,12 @@ class Device:
             print(f"{self.ip} 固件升级成功")
             print(output)
             with open(f'{self.ip}_update_info.csv', 'a') as csv_file:
+<<<<<<< HEAD
                 csv_file.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')},{output}\n")
+=======
+                csv_file.write(
+                    f"{time.strftime('%Y-%m-%d %H:%M:%S')},{output}\n")
+>>>>>>> 2054dc0 (first commit)
                 self.log('升级成功', log_file)
         except Exception as e:
             print(f"{self.ip} 固件升级失败：{e}")
@@ -131,6 +136,10 @@ def main():
                 device.execute(cmd_file, LOG_FILE)
                 device.upgrade_firmware(TFTP_SERVER, FIRMWARE_FILE, LOG_FILE)
                 device.backup(LOG_FILE)
+<<<<<<< HEAD
+=======
+# TODO:调用方面还需要完善
+>>>>>>> 2054dc0 (first commit)
 
 
 if __name__ == '__main__':
