@@ -1,8 +1,6 @@
 import time
-import logging
 from netmiko import ConnectHandler
 from getpass import getpass
-
 
 LOG_FILE = 'log_file.log'
 CMD_FILE = '../cmd_file.txt'

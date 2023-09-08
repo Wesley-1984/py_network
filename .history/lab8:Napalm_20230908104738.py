@@ -2,9 +2,8 @@ from napalm import get_network_driver
 import json
 from getpass import getpass
 
-"""
-批量查看运行状态
-"""
+    """批量查看运行状态
+    """
 
 ip = '192.168.80.2'
 username = input('Username:')
