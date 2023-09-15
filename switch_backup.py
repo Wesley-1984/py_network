@@ -42,6 +42,7 @@ class RuijieSwitchBackup:
         full_backup_path = os.path.join(self.save_path, backup_filename)
 
         try:
+            save=self.connection.send_command("wr m")
             output = self.connection.send_command("show running-config")
             with open(full_backup_path, "w") as backup_file:
                 backup_file.write(output)
