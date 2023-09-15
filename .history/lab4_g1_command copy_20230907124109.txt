@@ -1,5 +1,0 @@
-config terminal
-interface vlan 1
-description Python_G2
-end
-wr mem
