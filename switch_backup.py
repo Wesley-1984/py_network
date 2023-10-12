@@ -1,4 +1,4 @@
-#!/opt/switch/tutorial-env python3
+#!/usr/local/bin python3
 # coding=utf-8
 import os
 import time
